@@ -1,0 +1,310 @@
+/* Academics page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff; 
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 4px solid #ffcc00;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    max-height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #e40046; 
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffd700; 
+    color: #000; 
+}
+
+/* Hero Section */
+.hero {
+    background: url('../uni\ cam.jpg') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #ffcc00; 
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Academic Divisions Section */
+.divisions {
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.divisions h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.divisions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center; 
+}
+
+.division {
+    text-align: left;
+}
+
+.division img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.division h3 {
+    color: #e40046;
+    margin: 1rem 0 0.5rem;
+}
+
+.division p {
+    margin: 0;
+}
+
+/* Programs and Courses Section */
+.programs {
+    background-color: #e4e9ef;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.programs h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.programs p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.programs-list {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.programs-list h3 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #e40046;
+}
+
+.programs-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+.programs-list ul li {
+    margin-bottom: 0.5rem;
+}
+
+.programs-list ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.programs-list ul li a:hover {
+    color: #e40046;
+}
+
+/* Research Opportunities Section */
+.research {
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.research h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.research-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.research-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.research-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.research-text {
+    flex: 2;
+    min-width: 300px;
+    text-align: left;
+}
+
+.research-text p {
+    margin: 0 0 1rem;
+}
+
+.research-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #e40046;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.research-button:hover {
+    background-color: #ffcc00;
+}
+
+/* Student Support and Resources Section */
+.support {
+    background-color: #e4e9ef;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.support h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.support-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.support-item {
+    max-width: 300px;
+    text-align: left;
+}
+
+.support-item i {
+    font-size: 2rem;
+    color: #e40046;
+    margin-bottom: 0.5rem;
+}
+
+.support-item h3 {
+    color: #e40046;
+    margin: 0.5rem 0;
+}
+
+.support-item p {
+    margin: 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #002147;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    border-top: 4px solid #ffcc00;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
