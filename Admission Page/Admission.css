@@ -1,0 +1,281 @@
+/* Admission page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff; 
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 4px solid #ffcc00;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    max-height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #e40046; 
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffd700; 
+    color: #000; 
+}
+
+
+/* Main/Hero Section */
+.hero {
+    background: url('../uni\ cam.jpg') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #ffcc00; 
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Sections Styles */
+section {
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #e40046;
+}
+
+.admission-steps {
+    background-color: #f5f5f5;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.step {
+    text-align: left;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step i {
+    font-size: 3rem;
+    color: #e40046;
+    margin-bottom: 1rem;
+}
+
+.step h3 {
+    color: #e40046;
+    margin-bottom: 1rem;
+}
+
+.step p {
+    margin: 0;
+}
+
+.programs {
+    background-color: #e4e9ef;
+    padding: 2rem 1rem;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.program {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.program img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.program h3 {
+    color: #e40046;
+    margin: 1rem 0 0.5rem;
+}
+
+.program p {
+    margin: 0;
+}
+
+.program-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #e40046;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.program-button:hover {
+    background-color: #ffcc00;
+}
+
+.deadlines {
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+}
+
+.deadlines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.deadline {
+    text-align: left;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.deadline h3 {
+    color: #e40046;
+    margin-bottom: 1rem;
+}
+
+.deadline p {
+    margin: 0;
+}
+
+.contact {
+    background-color: #e4e9ef;
+    padding: 2rem 1rem;
+}
+
+.contact h2 {
+    color: #e40046;
+}
+
+.contact p {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #e40046;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #002147;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    border-top: 4px solid #ffcc00;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
